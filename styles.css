@@ -9,6 +9,7 @@ body{
 	background-size: 100% 100%;
 	font-family: "Avant Garde",Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
+
 div{
 	padding-left: 2%;
 	text-align: left;
@@ -17,7 +18,7 @@ div{
 
 }
 h1{
-	margin-top:30px;
+	margin-top:1%;
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-align: center;
 	font-size: 75;
@@ -34,21 +35,21 @@ h2{
 	color:white;
 	font-size: 40;
 	font-weight: lighter; 
-	margin-bottom: 90px;
+	margin-bottom: 8%;
 }
 h3{
 	text-align: center;
 	color:white;
 	font-size: 40;
 	font-weight: lighter;
-	margin-bottom: 90px;
+	margin-bottom: 7%;
 }
 #arrow{
 	display:block;
-	margin-left: auto;
+	margin-left: 44%;
 	margin-right: auto;
 	width: 150px;
-	margin-bottom: 100px;
+	margin-bottom: 20%;
 
 }
 #calculations{
@@ -62,7 +63,4 @@ img.bulb{
 }
 #poweredBy{
 	text-align: center;
-	/*border-style: solid;
-	border-width: 1px;
-	padding-right: 2%;*/
 }
