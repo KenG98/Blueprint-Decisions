@@ -1,9 +1,20 @@
+// $(document).ready(function(){
+// 	$(".pictures").click(function(){
+// 		$("#intro").fadeOut();
+// 	});
+// });
+
 var decision_to_make = "";
 var factors = {};
 var options = {};
 
 function add_decision(){
 	decision_to_make = $("#decision-box").val();
+	var text_to_add = "<div id='actual_decision'>" + decision_to_make + "</div>";
+	$("#decision").fadeOut();
+	$("#decision").after(text_to_add);
+	$("#actual_decision").hide();
+	$("#actual_decision").fadeIn();
 }
 
 function add_factor(){
