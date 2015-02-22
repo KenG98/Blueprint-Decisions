@@ -46,6 +46,7 @@ function add_option(){
 	for(factor in factors){
 		$("#" + factor).val("");
 	}
+	$("#optionslist").append(theOption + ", ");
 }
 
 function set_high_lows(){
@@ -93,10 +94,12 @@ function do_calculations(){
 			// console.log(temppoints,current,tempimportance,high,low,wantHigh);
 
 			if(wantHigh == "high"){
-				temppoints += (current - low)/(high - low) * tempimportance;
+				// temppoints += (current - low)/(high - low) * tempimportance;
+				temppoints += current/(low + high)*tempimportance;
 			}
 			else if(wantHigh == "low"){
-				temppoints += (high - current)/(high - low) * tempimportance;
+				// temppoints += (high - current)/(high - low) * tempimportance;
+				temppoints += (1-(current/(low + high)))*tempimportance;
 			}
 			options[option]["points"] += temppoints;
 		}
