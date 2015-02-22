@@ -1,6 +1,6 @@
 button {
 	width: 300px;
-	height: 35px;
+	height: 50px;
 	background-image: url('menu.png');
 	background-repeat: repeat;
 	-webkit-border-radius: 5px;
@@ -11,7 +11,7 @@ button {
 	font-size: 18px;
 	color: #ffffff;
 	text-align: center;
-	padding-top: 15px;
+	padding-top: 5px;
 
 
 }
