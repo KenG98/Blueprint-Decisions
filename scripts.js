@@ -95,7 +95,19 @@ function do_calculations(){
 			options[option]["points"] += temppoints;
 		}
 	}
+	var highest = undefined;
+	var highscore = undefined;
 	for(option in options){
-		console.log(option + " " + options[option]["points"]);
+		if(highest == undefined){
+			highest = option;
+			highscore = options[option]["points"];
+		}
+		if(highscore < options[option]["points"]){
+			highscore = options[option]["points"];
+			highest = option;
+		}
+		$("#results").append(option + ": " + options[option]["points"] + "<br>");
+		//console.log(option + " " + options[option]["points"]);
 	}
+	$("#results").append("<br>Go with " + highest + ".<br>");
 }
