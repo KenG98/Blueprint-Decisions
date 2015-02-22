@@ -1,0 +1,23 @@
+.button {
+	width: 300px;
+	height: 35px;
+	background-image: url('menu.png');
+	background-repeat: repeat;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #282828;
+	font-family:arial;
+	font-size: 18px;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 15px;
+
+
+}
+.button:hover {
+	background-image: url('menu_hover.png');
+	cursor: pointer;
+}
+
+
