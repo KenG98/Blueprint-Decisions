@@ -23,6 +23,7 @@ function add_factor(){
 	var factorname = $("#factor-box").val();
 	$("#factor-box").val("");
 	var factorimportance = parseInt($("#factor-importance").val());
+	$("#factor-importance").val("");
 	var wantHigh = $("#want-high").val();
 	factors[factorname] = {"importance":factorimportance, "want_high": wantHigh};
 
