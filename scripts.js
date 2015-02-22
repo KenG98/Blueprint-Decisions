@@ -15,6 +15,7 @@ function add_decision(){
 	$("#decision").after(text_to_add);
 	$("#actual_decision").hide();
 	$("#actual_decision").fadeIn();
+	$("#after-decision").fadeIn();
 }
 
 function add_factor(){

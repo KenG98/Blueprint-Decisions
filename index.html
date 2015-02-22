@@ -34,39 +34,34 @@
 	</div>
 
 	<hr>
+	<div id='after-decision' hidden='true'>
+		<div id="factors">
+			Whats a factor that influences your decision? &nbsp;
+			<input type='text' id='factor-box'> <br>
+			On a scale of 1 to 10, how important is this factor?
+			<input type='number' id='factor-importance'> <br>
+			Ideally, will this value be high or low?
+			<select id="want-high">
+				<option value="select">Select</option>
+				<option value="high">High</option>
+				<option value="low">Low</option>
+			</select> <br>
+			<button type='button' onClick='add_factor()'>Add Factor</button> <br>
+		</div>
 
-	<div id="factors">
-		Whats a factor that influences your decision? &nbsp;
-		<input type='text' id='factor-box'> <br>
-		On a scale of 1 to 10, how important is this factor?
-		<input type='number' id='factor-importance'> <br>
-		Ideally, will this value be high or low?
-		<select id="want-high">
-			<option value="select">Select</option>
-			<option value="high">High</option>
-			<option value="low">Low</option>
-		</select> <br>
-		<button type='button' onClick='add_factor()'>Add Factor</button> <br>
-	</div>
+		<hr>
 
-	<hr>
+		<div id="options">
+			Whats an option you're considering? &nbsp;
+			<input type='text' id='option-box'> <br id="add-after-this">
+			<button type='button' onClick='add_option()'>Add Option</button> <br>
+		</div>
 
-	<div id="options">
-		Whats an option you're considering? &nbsp;
-		<input type='text' id='option-box'> <br id="add-after-this">
-		<button type='button' onClick='add_option()'>Add Option</button> <br>
-	</div>
+		<hr>
 
-	<!-- <hr>
-
-	<div id="parameters">
-		Parameters: not done yet (in this section the user specifies the values for each option)
-	</div> -->
-
-	<hr>
-
-	<div id="calculations">
-		<button type='button' onClick='do_calculations()'>Run Calculations</button> <br>
+		<div id="calculations">
+			<button type='button' onClick='do_calculations()'>Run Calculations</button> <br>
+		</div>
 	</div>
 	<div>
 	<img class="bulb" src="appicontrans.png">
