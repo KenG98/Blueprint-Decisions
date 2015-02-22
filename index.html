@@ -3,22 +3,57 @@
 <head>
 	<title>Decision Making Program</title>
 	<link rel='stylesheet' type='text/css' href='styles.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- jquery -->
 	<script src='scripts.js'></script>
-	<!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <img id="greyscale" src=img/intro-bg.jpg>
 </head>
 
 <body>
+	<div id="decision">
+		What's on your mind? &nbsp;
+		<input type='text' id='decision-box'> &nbsp;
+		<button type='button' onClick='add_decision()'>Set Decision</button> <br>
+	</div>
 
+	<hr>
+
+	<div id="factors">
+		Whats a factor that influences your decision? &nbsp;
+		<input type='text' id='factor-box'> <br>
+		On a scale of 1 to 10, how important is this factor?
+		<input type='number' id='factor-importance'> <br>
+		Ideally, will this value be high or low?
+		<select>
+			<option value="select">Select</option>
+			<option value="high">High</option>
+			<option value="low">Low</option>
+		</select> <br>
+		<button type='button' onClick='add_factor()'>Add Factor</button> <br>
+	</div>
+
+	<hr>
+
+	<div id="options">
+		Whats an option you're considering? &nbsp;
+		<input type='text' id='option-box'> &nbsp;
+		<button type='button' onClick='add_option()'>Add Option</button> <br>
+	</div>
+
+	<hr>
+
+	<div id="parameters">
+		Parameters: not done yet (in this section the user specifies the values for each option)
+	</div>
+
+	<hr>
+
+	<div id="calculations">
+		<button type='button' onClick='calculate()'>Run Calculations</button> <br>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<button type='button' onClick='test()'>TEST</button>
 </body>
 
 </html>
