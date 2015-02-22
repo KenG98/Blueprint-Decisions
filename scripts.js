@@ -27,12 +27,58 @@ function add_option(){
 		parameters[factor] = parseInt($("#" + factor).val());
 	}
 	options[theOption] = parameters;
+	options[theOption]["points"] = 0; //to start, so we can edit this later
 }
 
 function set_high_lows(){
 	for(factor in factors){
+		var high = undefined;
+		var low = undefined;
 		for(option in options){
-			
+			current = options[option][factor];
+			if(high == undefined){
+				high = current; 
+			}
+			if(low == undefined){
+				low = current;
+			}
+			if(current < low){
+				low = current;
+			}
+			if(current > high){
+				high = current;
+			}
 		}
+		factors[factor]["high"] = high;
+		factors[factor]["low"] = low;
+	}
+}
+
+function do_calculations(){
+	//before we start
+	set_high_lows();
+	//all points set to 0 in add_option method
+
+	for(option in options){
+		for(factor in factors){
+			var temppoints = 0;
+			var current = options[option][factor];
+			var tempimportance = factors[factor]["importance"];
+			var high = factors[factor]["high"];
+			var low = factors[factor]["low"];
+			var wantHigh = factors[factor]["want_high"];
+
+			if(wantHigh == "high"){
+				temppoints += (current - low)/(high - low) * importance;
+			}
+			else if(wantHigh == "low"){
+				temppoints += (high - current)/(high - low) * importance;
+			}
+			options[option]["points"] += temppoints;
+		}
+	}
+
+	for(option in options){
+		console.log(option + " " + options[option]["points"]);
 	}
 }
