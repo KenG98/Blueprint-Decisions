@@ -1,7 +1,7 @@
-#greyscale{
+/*#greyscale{
 	width:100%;
 	z-index: -1;
-}
+}*/
 body{
 	background-image: url("intro-bg.jpg"); 
 	position: left-top;
@@ -16,11 +16,9 @@ h1{
 }
 
 div{
-	
-	text-align: justify;
+	/*text-indent: 50px;*/
+	padding-left: 2%;
+	text-align: left;
 	font-size: 20;
-	color: white;
-	text-indent: 50px
-
-	
+	color: white;	
 }
