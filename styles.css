@@ -2,10 +2,16 @@
 	width:100%;
 	z-index: -1;
 }
-html{
-	background: gray;
+body{
+	background-image: url("intro-bg.jpg"); 
+	position: left-top;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
+
 div{
-	text-align: center;
+	text-align: justify;
 	font-size: 20;
+	color: white;
+	font-family: "Avant Garde",Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
