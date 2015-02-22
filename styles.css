@@ -10,15 +10,16 @@ body{
 	font-family: "Avant Garde",Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
 h1{
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-align: center;
-	font-size: 55;
-
+	font-size: 65;
 }
 
 div{
 	/*text-indent: 50px;*/
 	padding-left: 2%;
 	text-align: left;
-	font-size: 20;
+	font-size: 30;
+
 	color: white;	
 }
