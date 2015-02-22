@@ -51,6 +51,22 @@ h3{
 	margin-bottom: 100px;
 
 }
+
+input{
+	font-size: 15;
+}
+
+button{
+	font-size: 15;
+}
+
+select{
+	font-size: 15;
+}
+
+option{
+	font-size: 15;
+}
 /*#ring{
 	background: none;
 	display:block;
