@@ -1,4 +1,4 @@
-.button {
+button {
 	width: 300px;
 	height: 35px;
 	background-image: url('menu.png');
@@ -15,7 +15,7 @@
 
 
 }
-.button:hover {
+button:hover {
 	background-image: url('menu_hover.png');
 	cursor: pointer;
 }
