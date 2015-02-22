@@ -12,7 +12,11 @@ body{
 h1{
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-align: center;
-	font-size: 65;
+	font-size: 75;
+	letter-spacing: 2px;
+	border-style: outset;
+	border-width: 10px;
+
 }
 
 div{
