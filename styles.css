@@ -1,7 +1,7 @@
-#greyscale{
+/*#greyscale{
 	width:100%;
 	z-index: -1;
-}
+}*/
 body{
 	background-image: url("intro-bg.jpg"); 
 	position: left-top;
@@ -10,17 +10,20 @@ body{
 	font-family: "Avant Garde",Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
 h1{
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-align: center;
-	font-size: 55;
+	font-size: 75;
+	letter-spacing: 2px;
+	border-style: outset;
+	border-width: 10px;
 
 }
 
 div{
-	
-	text-align: justify;
-	font-size: 20;
-	color: white;
-	text-indent: 50px
+	/*text-indent: 50px;*/
+	padding-left: 2%;
+	text-align: left;
+	font-size: 30;
 
-	
+	color: white;	
 }
