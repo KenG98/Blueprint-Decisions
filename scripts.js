@@ -27,7 +27,6 @@ function add_option(){
 		parameters[factor] = parseInt($("#" + factor).val());
 	}
 	options[theOption] = parameters;
-	options[theOption]["points"] = 0; //to start, so we can edit this later
 }
 
 function set_high_lows(){
@@ -57,27 +56,32 @@ function set_high_lows(){
 function do_calculations(){
 	//before we start
 	set_high_lows();
-	//all points set to 0 in add_option method
+	//all points set to 0
+	for(tempop in options){
+		options[tempop]["points"] = 0;
+	}
 
 	for(option in options){
 		for(factor in factors){
+			// console.log(option + " " + factor + " " + options[option][factor]);
+
 			var temppoints = 0;
 			var current = options[option][factor];
 			var tempimportance = factors[factor]["importance"];
 			var high = factors[factor]["high"];
 			var low = factors[factor]["low"];
 			var wantHigh = factors[factor]["want_high"];
+			// console.log(temppoints,current,tempimportance,high,low,wantHigh);
 
 			if(wantHigh == "high"){
-				temppoints += (current - low)/(high - low) * importance;
+				temppoints += (current - low)/(high - low) * tempimportance;
 			}
 			else if(wantHigh == "low"){
-				temppoints += (high - current)/(high - low) * importance;
+				temppoints += (high - current)/(high - low) * tempimportance;
 			}
 			options[option]["points"] += temppoints;
 		}
 	}
-
 	for(option in options){
 		console.log(option + " " + options[option]["points"]);
 	}
