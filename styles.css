@@ -9,6 +9,14 @@ body{
 	background-size: 100% 100%;
 	font-family: "Avant Garde",Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
+div{
+	/*text-indent: 50px;*/
+	padding-left: 2%;
+	text-align: left;
+	font-size: 30;
+	color: white;
+
+}
 h1{
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-align: center;
@@ -18,12 +26,16 @@ h1{
 	border-width: 10px;
 
 }
-
-div{
-	/*text-indent: 50px;*/
-	padding-left: 2%;
-	text-align: left;
+h2{
+	text-align: center;
+	color:white;
 	font-size: 30;
-
-	color: white;	
+	font-weight: lighter; 
+}
+h3{
+	text-align: center;
+	color:white;
+	font-size: 30;
+	margin-bottom: 200px;
+	font-weight: lighter;
 }
