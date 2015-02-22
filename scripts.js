@@ -29,7 +29,7 @@ function add_factor(){
 
 	//add it to the form
 	var nametemp = factorname.charAt(0).toUpperCase() + factorname.slice(1);
-	var formtemp = nametemp + "&nbsp; <input type='text' id='" + factorname + "'><br>"; //factorname &nbsp; <input type='text' id='factorname'>
+	var formtemp = nametemp + ": <input type='text' id='" + factorname + "'> (Importance:" + factorimportance + "&nbsp; Ideally:" + wantHigh + ")<br>"; //factorname &nbsp; <input type='text' id='factorname'>
 	$("#add-after-this").after(formtemp);
 }
 
@@ -40,6 +40,12 @@ function add_option(){
 		parameters[factor] = parseInt($("#" + factor).val());
 	}
 	options[theOption] = parameters;
+
+	//clear some stuff
+	$("#option-box").val("");
+	for(factor in factors){
+		$("#" + factor).val("");
+	}
 }
 
 function set_high_lows(){
