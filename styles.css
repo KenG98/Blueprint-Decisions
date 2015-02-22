@@ -42,8 +42,12 @@ h3{
 	margin-left: 44%;
 	margin-right: auto;
 	width: 150px;
-	margin-bottom: 20%;
+	margin-bottom: 15%;
 }
+#decision{
+	text-align: center;
+}
+
 
 input{
 	font-size: 15;
@@ -66,6 +70,7 @@ option{
 	margin-bottom: 130px;
 }
 img.bulb{
+	margin-top: 15%;
  	display: block;
  	width:200px;
     margin-left: auto;
